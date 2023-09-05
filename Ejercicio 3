@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n;
+    int suma = 0;
+
+    printf("Ingrese un número entero n: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i <= abs(n); i++) {
+        suma += i;
+    }
+
+    if (n < 0) {
+        suma = -suma; // Invertir el signo de la suma si n es negativo
+    }
+
+    printf("La suma de los números enteros desde 0 hasta %d es: %d\n", n, suma);
+
+    return 0;
+}
