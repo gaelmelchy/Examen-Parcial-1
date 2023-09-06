@@ -1,0 +1,26 @@
+//programa para obtener la tabla de multiplicar de un numero, hasta 10
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int numero;
+
+    printf("\n si quieres salir pon 0");
+    printf("\n\t Ingrese un número para obtener su tabla de multiplicar: ");
+    scanf("%d", &numero);//asi guardo el numero en mi variable
+
+    while (numero != 0) {
+        for (int i = 1; i <= 10; i++) {
+            printf("%d x %d = %d\n", numero, i, numero * i);
+        }
+
+        printf("\nIngrese otro número (0 para salir): "); //hago esto para poder tener un break
+        scanf("%d", &numero);
+    }
+
+   
+
+    return 0;
+}
