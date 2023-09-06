@@ -1,0 +1,26 @@
+//programa para introducir numeros hasta que introduzcas uno negativo y se salga 
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double numero;
+    
+    printf("Introduzca números (introduzca un número negativo para salir):\n");
+    
+    while (1) {
+        printf("Ingrese un número: ");
+        scanf("%lf", &numero);
+        
+        if (numero < 0) {
+            printf("Número negativo ingresado. Saliendo del programa...\n");
+            break; // aqui ya se quiebra el programa
+        }
+        
+        
+        printf("Número ingresado: %.2lf\n", numero);
+    }
+    
+    return 0;
+}
