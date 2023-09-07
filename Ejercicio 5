@@ -1,6 +1,7 @@
 //programa para obtener la tabla de multiplicar del 1-10 de cualquier numero
 
 #include <stdio.h>
+#inlcude <math.h>
 
 int main() {
     int numero;
