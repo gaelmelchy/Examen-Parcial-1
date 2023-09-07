@@ -3,34 +3,20 @@
 
 #include <stdio.h>
 #include <math.h>
-int main()
-{
- 
-int numero; //en este caso mi variable de dato ser "numero"
- 
- 
-//okay primer paso completado 
- 
-printf("Ingresa un numero: "); //aqui para que salga el mensaje en la pantalla
- 
-scanf("%d", &numero); //aqui indico que lo guarde 
- 
-// Mostrar los 10 números siguientes
- 
-printf("Los 10 numeros siguientes son:\n");//este solo nos va a imprimir que el resultado es
- 
- 
- 
-for (int i = 1; i <= 10; i++) //i ++ para que aumente de 1 en 1, i<=10 me va a marcar que una vez llegue a esos 10 pare
- 
-{
- 
-printf("%d\n", numero + i); //le pongo \n para que haga un salto de linea y vayan en orden 
- 
+
+int main() {
+    int numero;
+
+    printf("Ingresa un numero: ");
+    scanf("%d", &numero);
+
+    printf("Los 10 numeros siguientes son:\n");
+
+    int i = 1; // Inicializamos i a 1
+    while (i <= 10) {
+        printf("%d\n", numero + i);
+        i++; // Incrementamos i en cada iteración
+    }
+
+    return 0;
 }
- 
-return 0;
-}
- 
- 
- 
