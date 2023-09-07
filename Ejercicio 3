@@ -1,5 +1,6 @@
 //programa para sumar n enteros 
 
+
 #include <stdio.h>
 #include <math.h>
 
@@ -10,8 +11,11 @@ int main() {
     printf("Ingrese un número entero n: ");
     scanf("%d", &n);
 
-    for (int i = 0; i <= abs(n); i++) {
+    int i = 0; // Inicializamos i a 0
+
+    while (i <= abs(n)) {
         suma += i;
+        i++; // Incrementamos i en cada iteración
     }
 
     if (n < 0) {
@@ -22,3 +26,4 @@ int main() {
 
     return 0;
 }
+
